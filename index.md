@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Scandles
+
+**The best place for scented candles on the internet**
 
 You can use the [editor on GitHub](https://github.com/pandaops/pandaops.cryptozombies.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
