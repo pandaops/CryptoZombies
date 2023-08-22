@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Helvetica, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             background: linear-gradient(90deg, #fafafa, #e6e6e6);
             background-size: cover;
             background-repeat: no-repeat;
@@ -25,19 +26,24 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            display: none;
         }
         p {
             font-size: 18px;
             margin-bottom: 20px;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="Meritic_Logo.png" alt="Your Image Here">
-        <h1>Coming Soon</h1>
+        <img src="image.jpg" alt="Your Image Here">
+        <h2>Coming Soon</h2>
     </div>
 </body>
 </html>
