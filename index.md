@@ -15,7 +15,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #333;
+            color: white;
             text-align: center;
         }
         .container {
