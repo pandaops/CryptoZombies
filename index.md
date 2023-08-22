@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
-            background: linear-gradient(90deg, #fafafa, #e6e6e6);
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(180deg, #fff2f8, #ffffff);
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
@@ -19,7 +19,7 @@
             text-align: center;
         }
         .container {
-            max-width: 600px;
+            max-width: 648px;
             padding: 20px;
             background: rgba(78, 30, 108, 1);
             border-radius: 10px;
@@ -42,7 +42,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="image.jpg" alt="Your Image Here">
+        <img src="image.png" alt="Your Image Here">
         <h2>Coming Soon</h2>
     </div>
 </body>
