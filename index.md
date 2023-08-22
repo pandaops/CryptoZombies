@@ -5,7 +5,7 @@
     <title>Coming Soon</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, sans-serif;
             background: linear-gradient(90deg, #fafafa, #e6e6e6);
             background-size: cover;
             background-repeat: no-repeat;
@@ -37,7 +37,6 @@
 <body>
     <div class="container">
         <h1>Coming Soon</h1>
-        <p>We are working hard to bring you something amazing. Stay tuned!</p>
     </div>
 </body>
 </html>
