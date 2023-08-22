@@ -36,7 +36,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="Meritic_logo.png" alt="Your Image Here">
+        <img src="Meritic_Logo.png" alt="Your Image Here">
         <h1>Coming Soon</h1>
     </div>
 </body>
