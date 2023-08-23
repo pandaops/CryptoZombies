@@ -16,7 +16,7 @@
             align-items: center;
             justify-content: center;
             color: #4e1e6c;
-            font-size: 33px;
+            font-size: 27px;
             text-align: center;
         }
         .container {
@@ -30,7 +30,8 @@
             display: none;
         }
         p {
-            font-size: 33px;
+            font: 'Quicksand'
+            font-size: 27px;
             margin-bottom: 20px;
         }
         img {
