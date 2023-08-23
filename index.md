@@ -16,6 +16,7 @@
             align-items: center;
             justify-content: center;
             color: #4e1e6c;
+            font-size: 33px;
             text-align: center;
         }
         .container {
