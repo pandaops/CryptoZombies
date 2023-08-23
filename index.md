@@ -23,7 +23,7 @@
             padding: 20px;
             background: white;
             border-radius: 0px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 33px rgba(0, 0, 0, 0.1);
         }
         h1 {
             display: none;
@@ -43,7 +43,7 @@
 <body>
     <div class="container">
         <img src="image.png" alt="Your Image Here">
-        <h2>Coming Soon</h2>
+        <p>Coming Soon</p>
     </div>
 </body>
 </html>
