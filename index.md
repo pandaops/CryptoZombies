@@ -44,7 +44,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="image.png" alt="Your Image Here">
+        <img src="image_caps.png" alt="Your Image Here">
         <p>Coming soon.</p>
     </div>
 </body>
