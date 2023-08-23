@@ -29,7 +29,7 @@
             display: none;
         }
         p {
-            font-size: 18px;
+            font-size: 33px;
             margin-bottom: 20px;
         }
         img {
