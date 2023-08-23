@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Meritic: Empower financial intelligence</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
@@ -30,7 +30,7 @@
             display: none;
         }
         p {
-            font: 'Quicksand'
+            font: 'Quicksand';
             font-size: 27px;
             margin-bottom: 20px;
         }
