@@ -5,12 +5,16 @@
     <title>Meritic: Empower financial intelligence</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        html {
+                background: linear-gradient(180deg, #f6edf6, #ffffff);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100%;
+                margin: 0;
+            }
         body {
             font-family: 'Quicksand';
-            background: linear-gradient(180deg, #f6edf6, #ffffff);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
+            height: 100%;
             margin: 0;
             display: flex;
             align-items: center;
