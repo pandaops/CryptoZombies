@@ -21,8 +21,8 @@
         .container {
             max-width: 648px;
             padding: 20px;
-            background: rgba(78, 30, 108, 1);
-            border-radius: 10px;
+            background: white;
+            border-radius: 0px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
