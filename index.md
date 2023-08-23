@@ -45,7 +45,7 @@
 <body>
     <div class="container">
         <img src="image.png" alt="Your Image Here">
-        <p>Coming Soon</p>
+        <p>Coming soon.</p>
     </div>
 </body>
 </html>
