@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
-            background: linear-gradient(180deg, #fff2f8, #ffffff);
+            background: linear-gradient(180deg, #f6edf6, #ffffff);
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
