@@ -30,8 +30,8 @@
             display: none;
         }
         p {
-            font: 'Quicksand';
-            font-size: 27px;
+            font-family: 'Quicksand';
+            font-size: 18px;
             margin-bottom: 20px;
         }
         img {
@@ -45,7 +45,7 @@
 <body>
     <div class="container">
         <img src="image_caps.png" alt="Your Image Here">
-        <p>Coming soon, stay tuned!</p>
+        <p>Coming soon.</p>
     </div>
 </body>
 </html>
