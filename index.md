@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Quicksand';
             background: linear-gradient(180deg, #f6edf6, #ffffff);
             background-size: cover;
             background-repeat: no-repeat;
