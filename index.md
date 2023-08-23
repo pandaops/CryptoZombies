@@ -35,7 +35,7 @@
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 0px;
             margin-bottom: 15px;
         }
     </style>
