@@ -45,7 +45,7 @@
 <body>
     <div class="container">
         <img src="image_caps.png" alt="Your Image Here">
-        <p>Coming soon.</p>
+        <p>Coming soon, stay tuned!</p>
     </div>
 </body>
 </html>
