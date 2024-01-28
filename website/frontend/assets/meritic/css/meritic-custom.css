@@ -855,40 +855,53 @@ body {
     animation: typewriter 4s steps(30) infinite normal, blinkTextCursor 500ms steps(30) infinite normal;
   }
 
+    /* Center the typewriter container vertically and align it to the left */
     .typewriter-container {
-        margin-top: 14%;
-        margin-left: 17.5%;
-        margin-bottom: 7%;
+      flex: 1; /* Allows the container to expand */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers content vertically */
+      align-self: flex-start;
+      margin-left: 12vw;
+      margin-top: 12vw;
+    }
+    .underline {
+
     }
 
-    .underline {
-    margin-left: 0.66%;
+    /* Flex container that holds logos */
+    .meritic-investor-container {
+        display: flex;
+        justify-content: space-evenly; /* Distributes children evenly */
+        align-items: center; /* Aligns children vertically in the center */
     }
 
     .meritic-investor-logo {
     display: column;
-    opacity: 80%;
-    max-width: 12%;
-    margin-right: 6%;
-    margin-left: 6%;
-    align-items: center;
-    justify-content: center;
+    opacity: 50%;
+    max-width: 14%;
     }
+
 
     .meritic-investor-logo-accel {
         max-width: 10%;
-        margin-left: 10.5%;
+    }
+
+
+    .meritic-investor-logo-neotribe {
+        max-width: 17%;
     }
 
     .form-button-combo {
     width: 33%;
-    margin-left: 17.5%;
-    margin-top: 7%;
+    margin-left: 12vw;
+    margin-top: 7vh;
     display: flex; /* Align items horizontally */
     border-radius: 10px; /* Oval shape */
     overflow: hidden; /* Ensures inner elements' corners don't show outside the container's rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow for depth */
     padding: 0; /* Ensure no padding inside the div */
+    align-self: flex-start;
     }
 
     .oval-input {
@@ -917,5 +930,15 @@ body {
 
     .investor-start {
       margin-top: 14%;
-      opacity: 80%;
+      opacity: 70%;
+    }
+
+    ./* This will be your main container styling */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80vh;
+      padding-left: 7%; /* Left padding to align content */
+      padding-right: 7%; /* Right padding to keep symmetry */
     }

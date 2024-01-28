@@ -67,11 +67,12 @@
             <div class="underline align-center pb-3">
                     <div class="line"></div>
             </div>
-            <img class="meritic-investor-logo meritic-investor-logo-accel" src="website/frontend/assets/images/accel_logo_white.png">
-            <img class="meritic-investor-logo" src="website/frontend/assets/images/peakxv_logo_white.png">
-            <img class="meritic-investor-logo" src="website/frontend/assets/images/neotribe_logo_white.png">
-            <img class="meritic-investor-logo" src="website/frontend/assets/images/flybridge_logo_white.png">
-
+            <div class="meritic-investor-container">
+                <img class="meritic-investor-logo meritic-investor-logo-accel" src="website/frontend/assets/images/accel_logo_white.png">
+                <img class="meritic-investor-logo meritic-investor-logo-neotribe" src="website/frontend/assets/images/neotribe_logo_white.png">
+                <img class="meritic-investor-logo" src="website/frontend/assets/images/peakxv_logo_white.png">
+                <img class="meritic-investor-logo" src="website/frontend/assets/images/graduate_syndicate_logo_white.png">
+            </div>
         </div>
 
     </section>
@@ -99,6 +100,28 @@
         </div>
     </section-->
 
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title display-3" id="modalLongTitle"></h5>
+            <button type="button" class="close display-3" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body display-5">
+            Thank you for showing your interest, we will get in touch.
+          </div>
+          <div class="modal-footer display-3">
+            <button type="button" class="btn-sm btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -119,9 +142,18 @@
       };
 
       document.addEventListener("DOMContentLoaded", () => {
-        typeSentence();
-        setInterval(typeSentence, 4000); // Adjust total timing to match CSS
-      });
+            typeSentence();
+            setInterval(typeSentence, 4000); // Adjust total timing to match CSS
+          });
+
+          document.querySelector('.oval-btn').addEventListener('click', function() {
+      // Optional: Save email value if needed
+      // var emailValue = document.querySelector('.oval-input').value;
+
+      // Trigger the modal to show up
+      $('#thankYouModal').modal('show');
+    });
+
     </script>
 
 
