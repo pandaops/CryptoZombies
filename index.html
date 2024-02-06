@@ -147,10 +147,13 @@
         currentSentence = (currentSentence + 1) % sentences.length;
       };
 
-      document.addEventListener("DOMContentLoaded", () => {
-        typeSentence();
-        setInterval(typeSentence, 4000); // Adjust total timing to match CSS
-      });
+        document.addEventListener("DOMContentLoaded", () => {
+          document.fonts.ready.then(() => {
+            typeSentence();
+            setInterval(typeSentence, 4000); // Adjust total timing to match CSS
+          });
+        });
+
 
       document.querySelector('.oval-btn').addEventListener('click', function() {
 
