@@ -19,15 +19,15 @@ body {
 }
 .display-1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4.5rem;
+  font-size: calc(1rem + 1.1vw);
 }
 .display-2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.1rem;
+  font-size: calc(1rem + 1vw);
 }
 .display-3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.66rem;
+  font-size: calc(0.4rem + 1vw);
 }
 .display-4 {
   font-family: 'Montserrat', sans-serif;
@@ -45,47 +45,29 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
 }
-/* ---- Fluid typography for mobile devices ---- */
-/* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
-/* 100vw - current viewport width */
-/* (48 - 20)  48 == 48rem == 768px, 20 == 20rem == 320px(minimal supported viewport) */
-/* 0.65 - min scale variable, may vary */
-@media (max-width: 768px) {
-  .display-1 {
-    font-size: 3.6rem;
-    font-size: calc( 2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (2.225rem + (4.5 - 2.225) * ((100vw - 20rem) / (48 - 20))));
-  }
-  .display-2 {
-    font-size: 2.8rem;
-    font-size: calc( 1.875rem + (3.5 - 1.875) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.875rem + (3.5 - 1.875) * ((100vw - 20rem) / (48 - 20))));
-  }
-  .display-5 {
-    font-size: 1.52rem;
-    font-size: calc( 1.315rem + (1.9 - 1.315) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.315rem + (1.9 - 1.315) * ((100vw - 20rem) / (48 - 20))));
-  }
-}
+
 /* Buttons */
 .btn {
-  font-weight: 600;
-  border-width: 0px;
-  font-style: normal;
-  letter-spacing: 2px;
-  margin: 0;/*.4rem .8rem;*/
-  white-space: normal;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  word-break: break-word;
-  border-radius: 0px;
+    font-weight: 600;
+    border-left: 3px solid #4e136c;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin: 0;/*.4rem .8rem;*/
+    white-space: normal;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    word-break: break-word;
+    border-radius: 0px;
 }
 .btn-sm {
   font-weight: 600;
@@ -126,16 +108,18 @@ body {
 .btn-primary,
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #370947 !important;
+  background-color: #fff5f9 !important;
   border-color: #4e1e6c !important;
-  color: #ffffff !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #ffffff !important;
-  background-color: #000000 !important;
-  border-color: #fff2f8 !important;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-left: 3px solid #4e136c; /* Example: 1px solid black border on the left */
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -736,10 +720,12 @@ body {
   }
 }
 .meritic--landing {
-  background-color: #4e1e6c;
+  background-color: #4e136c;
+  background: linear-gradient(#4e1e6c, #220D2F);
+  opacity: 1;
 }
 .meritic--landing .underline .line {
-  width: 2.1rem;
+  width: calc(3.5rem + 3vw);
   height: 1.66px;
   background: #ffffff;
   display: inline-block;
@@ -760,7 +746,7 @@ body {
 .meritic--about-us .underline .line {
   width: 2rem;
   height: 1px;
-  background: #431e6c;
+  background-color: #431e6c;
   display: inline-block;
 }
 .meritic--about-us .image-element {
@@ -864,9 +850,8 @@ body {
       align-self: flex-start;
       margin-left: 12vw;
       margin-top: 12vw;
-    }
-    .underline {
-
+      width: 100%; /* Ensure it takes the full width */
+      max-width: 100%; /* Max width is 100% of the viewport width */
     }
 
     /* Flex container that holds logos */
@@ -892,37 +877,61 @@ body {
         max-width: 15%;
     }
 
-    .form-button-combo {
-    width: 33%;
-    margin-left: 12vw;
+.form-button-combo {
+    width: auto; /* Adjusts to content size */
+    min-width: 200px; /* Minimum width to ensure content visibility */
+    max-width: 40%; /* Prevents the combo from being too wide on large screens */
+    margin-left: 12vw; /* Adjusted for responsiveness */
     margin-top: 7vh;
-    display: flex; /* Align items horizontally */
-    border-radius: 10px; /* Oval shape */
-    overflow: hidden; /* Ensures inner elements' corners don't show outside the container's rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow for depth */
-    padding: 0; /* Ensure no padding inside the div */
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
     align-self: flex-start;
+}
+
+.oval-input {
+    flex-grow: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    margin-right: -4px; /* Adjust if necessary */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    max-height: 3rem;
+    font-size: 16px;
+}
+
+.oval-btn {
+    min-width: 100px; /* Ensure button remains visible */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: #4e1e6c;
+    margin: 0;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .form-button-combo {
+        flex-direction: column; /* Stack input and button vertically on small screens */
+        width: 80%; /* Adjust width for small screens */
+        margin-left: 10%; /* Center the combo */
     }
 
-    .oval-input {
-        flex-grow: 1; /* Allows input to grow and fill available space */
-        border: 0; /* Removes border */
-        outline: none; /* Removes outline */
-        padding: 10px 20px; /* Adjust padding as needed */
-        margin-right: -4px; /* Pulls button closer to input */
-        border-top-left-radius: 50px; /* Rounded corner on the left */
-        border-bottom-left-radius: 50px; /* Rounded corner on the left */
-        font-size: 16px; /* Adjust font size as needed */
+    .oval-input, .oval-btn {
+        width: 100%; /* Full width for both input and button */
+        border-radius: 10px; /* Adjusted border-radius for small screens */
+        margin-right: 0; /* Reset margin-right for input */
     }
 
     .oval-btn {
-        border: 0; /* Removes border */
-        border-top-right-radius: 50px; /* Rounded corner on the right */
-        border-bottom-right-radius: 50px; /* Rounded corner on the right */
-        height: auto; /* Adjusts height to fill the container */
-        margin: 0; /* Removes any margin */
-        padding: 10px 15px; /* Adjust padding to ensure button fills the space */
+        margin-top: 10px; /* Add some space between the input and button */
     }
+}
+
 
     .oval-input::placeholder {
       opacity: 0.8; /* Optional: Adjusts the opacity to make sure it's visible as desired */
@@ -941,4 +950,10 @@ body {
       height: 80vh;
       padding-left: 7%; /* Left padding to align content */
       padding-right: 7%; /* Right padding to keep symmetry */
+    }
+
+    #thankYouModal .modal-dialog {
+    width: 650px; /* Set your desired width */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    height: 50%;
     }

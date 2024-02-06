@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.8.8, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
-  <meta name="description" content="">
-  <title>Meritic</title>
-    <!-- CSS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+    <meta name="description" content="">
+    <title>Meritic</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
@@ -16,11 +14,10 @@
 </head>
 <body>
     <section class="menu1 menu meritic--navbar-styles" once="menu" id="menu1-1">
-
     <nav class="navbar navbar-dropdown navbar-expand-lg">
         <div class="navbar-brand">
-            <img src="assets/images/logo.png" class="meritic--navbar-logo" alt="" title="">
-            <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-2" href="https://www.meritic.ai">Meritic
+            <img src="assets/images/logo.png" class="shadow-glow meritic--navbar-logo" alt="" title="">
+            <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-1" href="https://www.meritic.ai">Meritic
                 </a></span>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +42,7 @@
     </nav>
 </section>
 
-    <section class="header5 meritic--landing mbr-fullscreen" id="header5-3">
+    <section class="meritic--landing mbr-fullscreen gradient-section" id="header5-3">
 
         <div class="container">
             <div class="typewriter-container">
@@ -68,11 +65,12 @@
             <div class="underline align-center pb-3">
                     <div class="line"></div>
             </div>
-            <img class="meritic-investor-logo meritic-investor-logo-accel" src="assets/images/accel_logo_white.png">
-            <img class="meritic-investor-logo" src="assets/images/peakxv_logo_white.png">
-            <img class="meritic-investor-logo" src="assets/images/neotribe_logo_white.png">
-            <img class="meritic-investor-logo" src="assets/images/flybridge_logo_white.png">
-
+            <div class="meritic-investor-container">
+                <img class="meritic-investor-logo meritic-investor-logo-accel" src="assets/images/accel_logo_white.png">
+                <img class="meritic-investor-logo" src="assets/images/peakxv_logo_white.png">
+                <img class="meritic-investor-logo" src="assets/images/neotribe_logo_white.png">
+                <img class="meritic-investor-logo" src="assets/images/graduate_syndicate_logo_white.png">
+            </div>
         </div>
 
     </section>
@@ -99,6 +97,27 @@
             </div>
         </div>
     </section-->
+    <!-- Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title display-3" id="modalLongTitle">You will hear from us!</h5>
+                    <button type="button" class="close display-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body display-5">
+                    <!-- Embed the Google Form iframe here -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqalAQi25GMUf-WdK-mxsTbU8iWBXGc9lbPGozhoPxMlt7Yw/viewform?embedded=true" width="600" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <div class="modal-footer display-3">
+                    <button type="button" class="btn-sm btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -123,8 +142,16 @@
         typeSentence();
         setInterval(typeSentence, 4000); // Adjust total timing to match CSS
       });
-    </script>
 
+      document.querySelector('.oval-btn').addEventListener('click', function() {
+
+          var emailValue = document.querySelector('.oval-input').value;
+
+          // Trigger the modal to show up
+          $('#thankYouModal').modal('show');
+      });
+
+    </script>
 
 </body>
 </html>
