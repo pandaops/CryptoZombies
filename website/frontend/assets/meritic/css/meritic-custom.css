@@ -805,14 +805,55 @@ body {
   letter-spacing: normal;
 }
 .meritic--navbar-logo {
-    height: 9vh; /* Adjust the height as needed */
+    height: 8vh; /* Adjust the height as needed */
     width: auto;  /* This ensures the width adjusts while keeping the aspect ratio */
     display: inline-block; /* Inline-block for alignment */
     vertical-align: middle; /* Aligns vertically in the center */
     margin-right: 10px; /* Adds some space between the logo and the title */
+    margin-top: 4%;
 }
 
 
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(255,255,255,0.80); }
+  to { border-right-color: transparent; }
+}
+
+  @keyframes typewriter {
+    0%, 3% { width: 0; }                  /* Start to 25%: Width is 0 (not started) */
+    40%, 75% { width: var(--text-width); } /* 50% to 60%: Width is full (text is fully visible) */
+    100% { width: 0; }                     /* 100%: Width is back to 0 (collapsed) */
+  }
+
+  .typewriter-static-text {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+  }
+
+  .typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+    overflow: hidden;
+    border-right: .11em solid #fff2f8; /* rgba(255,255,255,0.75); /* Cursor */
+    width: 0;
+    --text-width: 0px; /* Default text width */
+    animation: typewriter 4s steps(30) infinite normal, blinkTextCursor 500ms steps(30) infinite normal;
+  }
+
+    /* Center the typewriter container vertically and align it to the left */
+    .typewriter-container {
+      flex: 1; /* Allows the container to expand */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers content vertically */
+      align-self: flex-start;
+      margin-left: 12vw;
+      margin-top: 12vw;
+      width: 100%; /* Ensure it takes the full width */
+      max-width: 100%; /* Max width is 100% of the viewport width */
+    }
 @keyframes blinkTextCursor {
   from { border-right-color: rgba(255,255,255,0.80); }
   to { border-right-color: transparent; }
