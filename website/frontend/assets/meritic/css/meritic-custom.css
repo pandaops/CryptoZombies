@@ -846,12 +846,13 @@ body {
       flex: 1; /* Allows the container to expand */
       display: flex;
       flex-direction: column;
+      box-sizing: border-box;
       justify-content: center; /* Centers content vertically */
       align-self: flex-start;
       margin-left: 12vw;
       margin-top: 12vw;
-      width: 100%; /* Ensure it takes the full width */
-      max-width: 100%; /* Max width is 100% of the viewport width */
+      width: 80%; /* Ensure it takes the full width */
+      max-width: 80%; /* Max width is 100% of the viewport width */
     }
 @keyframes blinkTextCursor {
   from { border-right-color: rgba(255,255,255,0.80); }
