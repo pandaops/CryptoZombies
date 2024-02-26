@@ -19,7 +19,7 @@ body {
 }
 .display-1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(1rem + 1.1vw);
+  font-size: calc(1rem + 0.9vw);
 }
 .display-2 {
   font-family: 'Montserrat', sans-serif;
@@ -805,12 +805,11 @@ body {
   letter-spacing: normal;
 }
 .meritic--navbar-logo {
-    height: 8vh; /* Adjust the height as needed */
+    height: 7vh; /* Adjust the height as needed */
     width: auto;  /* This ensures the width adjusts while keeping the aspect ratio */
     display: inline-block; /* Inline-block for alignment */
     vertical-align: middle; /* Aligns vertically in the center */
     margin-right: 10px; /* Adds some space between the logo and the title */
-    margin-top: 4%;
 }
 
 

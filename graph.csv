@@ -1,0 +1,51 @@
+Source Node,Source Node Type,Destination Node,Destination Node Type,Edge Type
+Revenue,Metric,Pillar,Column,Dimension
+Revenue,Metric,Enrolments,Metric,Fundamental
+Revenue,Metric,Location,Column,Dimension
+Revenue,Metric,RevenueType,Column,Dimension
+COGS,Metric,Location,Column,Dimension
+COGS,Metric,Pillar,Column,Dimension
+Marketing Costs,Metric,Location,Column,Dimension
+Marketing Costs,Metric,Pillar,Column,Dimension
+Sales Cost,Metric,Location,Column,Dimension
+Sales Cost,Metric,Pillar,Column,Dimension
+Cash Receipts,Metric,Pillar,Column,Dimension
+Cash Receipts,Metric,Location,Column,Dimension
+Cash Receipts,Metric,CashReceiptsType,Column,Dimension
+Leads,Metric,Pillar,Column,Dimension
+Leads,Metric,Location,Column,Dimension
+Leads,Metric,Channel,Column,Dimension
+Primary Enrollments,Metric,Pillar,Column,Dimension
+Primary Enrollments,Metric,Location,Column,Dimension
+Primary Enrollments,Metric,Channel,Column,Dimension
+Enrollments,Metric,Pillar,Column,Dimension
+Enrollments,Metric,Location,Column,Dimension
+Enrollments,Metric,EnrollmentType,Column,Dimension
+Conversion Rate,Metric,Primary Enrollments,Metric,Fundamental
+Conversion Rate,Metric,Leads,Metric,Fundamental
+Projected Revenue,Metric,Pillar,Column,Dimension
+Projected Revenue,Metric,Location,Column,Dimension
+Projected Revenue,Metric,EnrollmentType,Column,Dimension
+LTV,Metric,Projected Revenue,Metric,Formulaic
+LTV,Metric,Enrollments,Metric,Formulaic
+Contribution Margin,Metric,Projected Revenue,Metric,Formulaic
+Contribution Margin,Metric,COGS,Metric,Formulaic
+Contribution Margin,Metric,Marketing Costs,Metric,Formulaic
+Contribution Margin,Metric,Sales Cost,Metric,Formulaic
+COGS/Student,Metric,COGS,Metric,Formulaic
+COGS/Student,Metric,Enrollments,Metric,Formulaic
+Marketing Cost/Student,Metric,Marketing Costs,Metric,Formulaic
+Marketing Cost/Student,Metric,Enrollments,Metric,Formulaic
+Sales Cost/Student,Metric,Sales Costs,Metric,Formulaic
+Sales Cost/Student,Metric,Enrollments,Metric,Formulaic
+Contribution Margin/Student,Metric,LTV,Metric,Formulaic
+Contribution Margin/Student,Metric,Marketing Cost/Student,Metric,Formulaic
+Contribution Margin/Student,Metric,Sales Cost/Student,Metric,Formulaic
+Contribution Margin/Student,Metric,COGS/Student,Metric,Formulaic
+Customer Acquisition Costs,Metric,COGS,Metric,Formulaic
+Customer Acquisition Costs,Metric,Marketing Costs,Metric,Formulaic
+Customer Acquisition Costs,Metric,Sales Cost,Metric,Formulaic
+CAC/Student,Metric,Customer Acquisition Costs,Metric,Formulaic
+CAC/Student,Metric,Enrollments,Metric,Formulaic
+Gross Margin,Metric,Revenue,Metric,Formulaic
+Gross Margin,Metric,COGS,Metric,Formulaic

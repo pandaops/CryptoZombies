@@ -1,0 +1,10 @@
+Source Node,Source Node Type,Destination Node,Destination Node Type,Edge Type
+Revenue,Metric,Variance 1,Analysis,Version = Actuals
+Revenue Forecast,Metric,Variance 1,Analysis,Version = Forecast
+Variance 1,Analysis,Variance 2,Analysis,Split by LOCATION
+Variance 1,Analysis,Growth 1,Analysis,vs Last Month
+Growth 1,Analysis,Enrolments,Metric,Compare to
+Enrolments,Metric,Growth 2,Analysis,vs Last Month
+Variance 2,Analysis,Variance 3,Analysis,Pick Brazil Split by TYPE
+Variance 2,Analysis,Variance 4,Analysis,Pick US Hispanic Split by TYPE
+Variance 2,Analysis,Variance 5,Analysis,Pick Mexico Split by TYPE
