@@ -9,9 +9,11 @@ body {
 .meritic--section-title {
   font-style: normal;
   line-height: 1.2;
+  max-width: 80%
 }
 .meritic--section-subtitle {
   line-height: 1;
+  max-width: 80%
 }
 .meritic-section-text {
   font-style: normal;
@@ -812,36 +814,7 @@ body {
     margin-right: 10px; /* Adds some space between the logo and the title */
 }
 
-
-@keyframes blinkTextCursor {
-  from { border-right-color: rgba(255,255,255,0.80); }
-  to { border-right-color: transparent; }
-}
-
-  @keyframes typewriter {
-    0%, 3% { width: 0; }                  /* Start to 25%: Width is 0 (not started) */
-    40%, 75% { width: var(--text-width); } /* 50% to 60%: Width is full (text is fully visible) */
-    100% { width: 0; }                     /* 100%: Width is back to 0 (collapsed) */
-  }
-
-  .typewriter-static-text {
-    display: inline-block;
-    white-space: nowrap;
-    vertical-align: top;
-  }
-
-  .typewriter {
-    display: inline-block;
-    white-space: nowrap;
-    vertical-align: top;
-    overflow: hidden;
-    border-right: .11em solid #fff2f8; /* rgba(255,255,255,0.75); /* Cursor */
-    width: 0;
-    --text-width: 0px; /* Default text width */
-    animation: typewriter 4s steps(30) infinite normal, blinkTextCursor 500ms steps(30) infinite normal;
-  }
-
-    /* Center the typewriter container vertically and align it to the left */
+/* Center the typewriter container vertically and align it to the left */
     .typewriter-container {
       flex: 1; /* Allows the container to expand */
       display: flex;
@@ -851,9 +824,10 @@ body {
       align-self: flex-start;
       margin-left: 12vw;
       margin-top: 12vw;
-      width: 80%; /* Ensure it takes the full width */
+      max-height: 50%; /* Ensure it takes the full width */
       max-width: 80%; /* Max width is 100% of the viewport width */
     }
+
 @keyframes blinkTextCursor {
   from { border-right-color: rgba(255,255,255,0.80); }
   to { border-right-color: transparent; }
@@ -863,12 +837,6 @@ body {
     0%, 3% { width: 0; }                  /* Start to 25%: Width is 0 (not started) */
     40%, 75% { width: var(--text-width); } /* 50% to 60%: Width is full (text is fully visible) */
     100% { width: 0; }                     /* 100%: Width is back to 0 (collapsed) */
-  }
-
-  .typewriter-static-text {
-    display: inline-block;
-    white-space: nowrap;
-    vertical-align: top;
   }
 
   .typewriter {
@@ -881,19 +849,11 @@ body {
     --text-width: 0px; /* Default text width */
     animation: typewriter 4s steps(30) infinite normal, blinkTextCursor 500ms steps(30) infinite normal;
   }
-
-    /* Center the typewriter container vertically and align it to the left */
-    .typewriter-container {
-      flex: 1; /* Allows the container to expand */
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Centers content vertically */
-      align-self: flex-start;
-      margin-left: 12vw;
-      margin-top: 12vw;
-      width: 100%; /* Ensure it takes the full width */
-      max-width: 100%; /* Max width is 100% of the viewport width */
-    }
+ .typewriter-static-text {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+  }
 
     /* Flex container that holds logos */
     .meritic-investor-container {
