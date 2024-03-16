@@ -51,7 +51,7 @@ body {
 /* Buttons */
 .btn {
     font-weight: 600;
-    border-left: 3px solid #4e136c;
+    border-left: 3px solid #4e1e6c;
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -118,7 +118,7 @@ body {
 .btn-primary.focus {
     color: #ffffff !important;
     background-color: #000000 !important;
-    border-left: 3px solid #4e136c; /* Example: 1px solid black border on the left */
+    border-left: 3px solid #4e1e6c; /* Example: 1px solid black border on the left */
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -722,7 +722,7 @@ body {
   }
 }
 .meritic--landing {
-  background-color: #4e136c;
+  background-color: #4e1e6c;
   background: linear-gradient(#4e1e6c, #220D2F);
   opacity: 1;
 }
@@ -833,6 +833,16 @@ body {
   to { border-right-color: transparent; }
 }
 
+@keyframes rotatelogo{
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(0deg); }
+  56% { transform: rotate(120deg); }
+  100% { transform: rotate(120deg); }
+}
+
+.rotatelogo{
+    animation: rotatelogo 4s linear infinite;
+}
   @keyframes typewriter {
     0%, 3% { width: 0; }                  /* Start to 25%: Width is 0 (not started) */
     40%, 75% { width: var(--text-width); } /* 50% to 60%: Width is full (text is fully visible) */
