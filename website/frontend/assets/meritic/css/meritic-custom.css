@@ -7,13 +7,15 @@ body {
   line-height: 1.5;
 }
 .meritic--section-title {
-  font-style: normal;
+  font-style: bold;
+  font-weight: 500;
   line-height: 1.2;
   max-width: 80%
 }
 .meritic--section-subtitle {
   line-height: 1;
-  max-width: 80%
+  max-width: 80%;
+  font-style: bold;
 }
 .meritic-section-text {
   font-style: normal;
@@ -41,7 +43,7 @@ body {
 }
 .display-6 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
 }
 .display-7 {
   font-family: 'Montserrat', sans-serif;
@@ -118,10 +120,6 @@ body {
 .btn-primary.focus {
     color: #ffffff !important;
     background-color: #000000 !important;
-    border-left: 3px solid #4e1e6c; /* Example: 1px solid black border on the left */
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -412,12 +410,15 @@ body {
 .meritic--navbar-styles a.nav-link:focus {
   color: #ffffff !important;
 }
+/* Make Navbar Fixed */
 .meritic--navbar-styles .navbar {
-  min-height: 77px;
-  transition: all .3s;
-  background: #333333;
-  background: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+  background-color: #E8E0FA; /* Ensure the navbar has a background color when fixed */
 }
+
 .meritic--navbar-styles .navbar.opened {
   transition: all .3s;
   background: #333333 !important;
@@ -670,11 +671,11 @@ body {
 }
 .meritic--navbar-styles .icons-menu span {
   font-size: 20px;
-  color: #ffffff;
+  color: #4e1e6c;
 }
 .meritic--navbar-styles .nav-link:hover,
 .meritic--navbar-styles .icons-menu .mbr-iconfont:hover {
-  color: #ffffff !important;
+  color: #4e1e6c !important;
 }
 .meritic--navbar-styles .dropdown-item:hover {
   color: #878787 !important;
@@ -683,10 +684,9 @@ body {
   position: absolute;
   content: '';
   height: 2px;
-  bottom: -0.5rem;
+  bottom: -1%;
   width: 0;
-  left: -1rem;
-  background: #ffffff;
+  background: #4e1e6c;
   transition: width 0.3s ease-in;
 }
 .meritic--navbar-styles .dropdown-menu {
@@ -702,7 +702,7 @@ body {
     -webkit-justify-content: space-around;
   }
   .meritic--navbar-styles .nav-link:hover::before {
-    width: calc(100% + 2rem);
+    width: calc(80% + 2rem);
   }
   .meritic--navbar-styles .dropdown-menu {
     top: 100%;
@@ -723,13 +723,13 @@ body {
 }
 .meritic--landing {
   background-color: #4e1e6c;
-  background: linear-gradient(#4e1e6c, #220D2F);
+  background: linear-gradient(#E8E0FA, #e9cae8);
   opacity: 1;
 }
 .meritic--landing .underline .line {
   width: calc(3.5rem + 3vw);
   height: 1.66px;
-  background: #ffffff;
+  background: #4e1e6c;
   display: inline-block;
 }
 .meritic--landing .mbr-section-title {
@@ -807,11 +807,11 @@ body {
   letter-spacing: normal;
 }
 .meritic--navbar-logo {
-    height: 7vh; /* Adjust the height as needed */
+    height: 5vh; /* Adjust the height as needed */
     width: auto;  /* This ensures the width adjusts while keeping the aspect ratio */
     display: inline-block; /* Inline-block for alignment */
     vertical-align: middle; /* Aligns vertically in the center */
-    margin-right: 10px; /* Adds some space between the logo and the title */
+    margin-right: 2.1vw; /* Adds some space between the logo and the title */
 }
 
 /* Center the typewriter container vertically and align it to the left */
@@ -829,19 +829,18 @@ body {
     }
 
 @keyframes blinkTextCursor {
-  from { border-right-color: rgba(255,255,255,0.80); }
+  from { border-right-color: #4e1e6c; }
   to { border-right-color: transparent; }
 }
 
 @keyframes rotatelogo{
   0% { transform: rotate(0deg); }
-  50% { transform: rotate(0deg); }
-  56% { transform: rotate(120deg); }
+  80% { transform: rotate(0deg); }
   100% { transform: rotate(120deg); }
 }
 
 .rotatelogo{
-    animation: rotatelogo 4s linear infinite;
+    animation: rotatelogo 3s linear infinite;
 }
   @keyframes typewriter {
     0%, 3% { width: 0; }                  /* Start to 25%: Width is 0 (not started) */
@@ -888,37 +887,11 @@ body {
         max-width: 15%;
     }
 
-.form-button-combo {
-    width: auto; /* Adjusts to content size */
-    min-width: 200px; /* Minimum width to ensure content visibility */
-    max-width: 40%; /* Prevents the combo from being too wide on large screens */
-    margin-left: 12vw; /* Adjusted for responsiveness */
-    margin-top: 7vh;
-    display: flex;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0;
-    align-self: flex-start;
-}
 
-.oval-input {
-    flex-grow: 1;
-    border: 0;
-    outline: none;
-    padding: 10px 20px;
-    margin-right: -4px; /* Adjust if necessary */
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    max-height: 3rem;
-    font-size: 16px;
-}
 
 .oval-btn {
     min-width: 100px; /* Ensure button remains visible */
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-color: #4e1e6c;
+    border-radius: 30px;
     margin: 0;
     padding: 10px 15px;
     color: black;
@@ -953,18 +926,121 @@ body {
       opacity: 70%;
     }
 
-    ./* This will be your main container styling */
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 80vh;
-      padding-left: 7%; /* Left padding to align content */
-      padding-right: 7%; /* Right padding to keep symmetry */
-    }
-
     #thankYouModal .modal-dialog {
     width: 650px; /* Set your desired width */
     max-width: 100%; /* Ensure it doesn't exceed the viewport width */
     height: 50%;
     }
+/* Main Headline Styling */
+.main-headline {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.meritic--main-title {
+  font-size: calc(2rem + 1vw);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+/* Solutions Container Padding */
+.solutions-container {
+  padding: 10%;
+}
+
+.anko--product {
+  background-color: #E8E0FA;
+}
+
+/* Ensure the heading spans full width and has proper margin */
+.solutions-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Flex Container for Tabs and Content */
+.solutions-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Tabs on the Left */
+.solutions-flex-container .nav {
+  flex: 0 0 25%; /* Adjust the width of the tabs section */
+  max-width: 25%;
+  margin-right: 2%; /* Space between tabs and content */
+}
+
+.solutions-flex-container .nav .nav-link {
+  border-radius: 0;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  border: 1px solid #4e1e6c;
+  border-radius: 33px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 600;
+}
+
+.solutions-flex-container .nav .nav-link:hover {
+  background-color: #fff2f8;
+}
+
+.solutions-flex-container .nav .nav-link.active {
+  background-color: #4e1e6c;
+  color: #fff;
+  border-color: #4e1e6c;
+}
+
+/* Tab Content on the Right */
+.solutions-flex-container .tab-content {
+  flex: 0 0 73%; /* Adjust to fill the remaining space */
+  max-width: 73%;
+}
+
+.product-content {
+  padding: 20px;
+  line-height: 2;
+}
+
+.product-content h4 {
+  margin-top: 0;
+}
+
+.product-content img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .solutions-flex-container {
+      flex-direction: column;
+  }
+
+  .solutions-flex-container .nav,
+  .solutions-flex-container .tab-content {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .solutions-flex-container .nav {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+.meritic-investor-container img {
+  filter: invert(1);
+}
+
+.team-member img {
+  width: 150px; /* Adjust this value as per your design */
+  height: 150px; /* Same as width to ensure a square aspect ratio */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden;
+}
