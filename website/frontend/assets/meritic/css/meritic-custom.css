@@ -996,7 +996,7 @@ body {
 
 /* Anko Advantages Carousel Styling */
 .anko--advantages {
-  background: linear-gradient(#E8E0FA, #fdebf8);
+  background-color: #E8E0FA;
   padding: 80px 0;
 }
 
@@ -1247,17 +1247,35 @@ body {
   padding-bottom: 1vw;
 }
 
-/* Image Section */
-.image-section {
-  text-align: center;
-  opacity: 90%;
-  overflow-x: hidden;
+.image-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.image-section img {
-  width: 96%;
-  height: 50vh;
+.image-section img { 
+  max-width: 100%;
+  height: auto;
+  max-height: 50vh;
   border-radius: 10px;
+}
+
+
+.issue-section-second {
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+}
+
+
+.image-section-second img {
+  max-height: 50vh;
+  width: auto;
+  border-radius: 10px;
+  
 }
 
 /* Hide Image on Small Devices */
